@@ -6,11 +6,11 @@ const Navbar = () => {
 
   const hamburgerMenuLine = `h-1 w-8 rounded-full bg-slate-900 transition ease transform duration-300`;
   return (
-    <header className=" sticky p-5 shadow-md">
+    <header className="sticky p-5 bg-white shadow-md">
       <div className="flex justify-between items-center container mx-auto">
         <h2 className="font-bold text-xl">Kagiso.dev</h2>
 
-        <nav className="font-medium text-md hidden sm:block">
+        <nav className="font-medium text-md hidden md:block">
           <ul role="list" className="flex items-center gap-8">
             <li>
               <a href="#home">Home</a>
@@ -30,7 +30,7 @@ const Navbar = () => {
           </ul>
         </nav>
         {/* hamburger & mobile menu */}
-        <div className="sm:hidden">
+        <div className="md:hidden">
           <button
             className="flex flex-col gap-1 relative p-2 z-10"
             onClick={toggleMenu}
@@ -50,7 +50,7 @@ const Navbar = () => {
             ></div>
           </button>
           <div
-            className={`flex justify-center items-center h-screen w-full absolute top-0 ${
+            className={`flex justify-center items-center h-screen w-full fixed top-0 ${
               isOpen ? "left-0" : "-left-full"
             } bg-slate-50 transition-all ease duration-300`}
           >
