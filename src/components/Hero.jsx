@@ -23,8 +23,8 @@ const Hero = () => {
   );
 
   return (
-    <section id="home" className=" bg-slate-200">
-      <div className="flex justify-center items-center sm:h-[800px] sm:-my-[68px]">
+    <section id="home" className="bg-slate-200">
+      <div className="flex justify-center items-center | sm:h-[800px]">
         <div className="flex flex-col-reverse items-center gap-10 p-10 container mx-auto | sm:p-5 | md:flex-row md:gap-8 | lg:px-0 lg:max-w-4xl">
           {/* hero text */}
           <div className="flex flex-col gap-4 text-center | sm:flex-1 | md:text-left | lg:gap-8">

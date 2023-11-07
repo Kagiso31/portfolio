@@ -6,7 +6,7 @@ const Navbar = () => {
 
   const hamburgerMenuLine = `h-1 w-8 rounded-full bg-slate-900 transition ease transform duration-300`;
   return (
-    <header className="sticky p-5 bg-white shadow-md">
+    <header className="fixed w-full p-5 bg-white shadow-md">
       <div className="flex justify-between items-center container mx-auto">
         <h2 className="font-bold text-xl">Kagiso.dev</h2>
 
@@ -19,7 +19,7 @@ const Navbar = () => {
               <a href="#about">About</a>
             </li>
             <li>
-              <a href="#techStack">Tech Stack</a>
+              <a href="#techstack">Tech Stack</a>
             </li>
             <li>
               <a href="#projects">Projects</a>
@@ -70,7 +70,7 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li>
-                  <a onClick={toggleMenu} href="#techStack">
+                  <a onClick={toggleMenu} href="#techstack">
                     Tech Stack
                   </a>
                 </li>
