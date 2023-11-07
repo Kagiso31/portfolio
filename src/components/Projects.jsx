@@ -7,7 +7,7 @@ const Projects = () => {
       id="projects"
       className="py-20 px-2 bg-slate-200 | sm:px-4 | md:py-28"
     >
-      <div className="flex flex-col gap-8 container mx-auto | lg:max-w-4xl">
+      <div className="flex flex-col gap-20 container mx-auto | lg:max-w-4xl">
         <h2 className="font-bold text-3xl text-center">Projects</h2>
 
         <div className="flex flex-col gap-10">

@@ -1,8 +1,11 @@
 import {
   bootstrap,
   css3,
+  github,
   html5,
   js,
+  linkedin,
+  mail,
   reactjs,
   sass,
   tailwindcss,
@@ -11,6 +14,27 @@ import {
 
 import spaceTourism from "../assets/space-tourism.png";
 import urlShorteningApi from "../assets/url-shortening-api.png";
+
+// socials
+const socials = {
+  mail: {
+    icon: mail,
+    title: "Mail",
+    username: "kagisomokou@gmail.com",
+  },
+  linkedin: {
+    icon: linkedin,
+    title: "Linkedin",
+    username: "Kagiso Mokou",
+    link: "https://www.linkedin.com/in/kagiso-mokou-50824a264",
+  },
+  github: {
+    icon: github,
+    title: "GitHub",
+    username: "@Kagiso31",
+    link: "https://www.github.com/Kagiso31",
+  },
+};
 
 // tech stack objects
 const tech = {
@@ -79,3 +103,6 @@ export const projects = [
     codeLink: "https://github.com/Kagiso31/url-shortening-api",
   },
 ];
+
+// Contact section data
+export const contacts = [socials.mail, socials.linkedin, socials.github];
