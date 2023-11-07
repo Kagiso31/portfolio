@@ -6,7 +6,7 @@ const Navbar = () => {
 
   const hamburgerMenuLine = `h-1 w-8 rounded-full bg-slate-900 transition ease transform duration-300`;
   return (
-    <header className="fixed z-10 w-full p-5 bg-white shadow-md">
+    <header className="z-10 w-full p-5 bg-white shadow-md">
       <div className="flex justify-between items-center container mx-auto">
         <h2 className="font-bold text-xl">Kagiso.dev</h2>
 
@@ -14,9 +14,6 @@ const Navbar = () => {
           <ul role="list" className="flex items-center gap-8">
             <li>
               <a href="#home">Home</a>
-            </li>
-            <li>
-              <a href="#about">About</a>
             </li>
             <li>
               <a href="#techstack">Tech Stack</a>
