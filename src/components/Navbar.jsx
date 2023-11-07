@@ -74,7 +74,7 @@ const Navbar = () => {
                 <li>
                   <a
                     onClick={() => setIsOpen((isOpen) => !isOpen)}
-                    href="#Contact"
+                    href="#contact"
                   >
                     Contact
                   </a>
