@@ -1,11 +1,11 @@
-import img from "../assets/profile.jpg";
+import portrait from "../assets/portrait.jpg";
 import { github, linkedin } from "../data/assets";
 
 const Hero = () => {
   return (
     <section id="home" className="bg-slate-200">
       <div className="flex justify-center items-center | sm:h-[800px]">
-        <div className="flex flex-col-reverse items-center gap-10 p-10 container mx-auto | sm:p-5 | md:flex-row md:gap-8 | lg:px-0 lg:max-w-4xl">
+        <div className="flex flex-col-reverse items-center gap-10 p-10 container mx-auto mt-[4.25rem] | sm:p-5 sm:mt-0 | md:flex-row md:gap-8 | lg:px-0 lg:max-w-4xl">
           {/* hero text */}
           <div className="flex flex-col gap-4 text-center | sm:flex-1 | md:text-left | lg:gap-8">
             <h1 className="font-bold text-4xl | lg:text-5xl">
@@ -32,7 +32,7 @@ const Hero = () => {
           </div>
           {/* hero image */}
           <div
-            style={{ backgroundImage: `url(${img})` }}
+            style={{ backgroundImage: `url(${portrait})` }}
             className={`h-64 w-64 border-black rounded-full bg-no-repeat bg-cover bg-center | lg:h-80 lg:w-80`}
           ></div>
         </div>
