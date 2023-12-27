@@ -9,11 +9,11 @@ const ProjectCard = ({
   codeLink,
 }) => {
   return (
-    <div className="grid rounded-lg shadow-sm bg-white | md:grid-cols-2 md:transition-all md:duration-300 md:hover:scale-105 md:hover:rounded-2xl md:hover:shadow-xl">
+    <div className="group grid rounded-lg shadow-sm bg-white | md:grid-cols-2 md:transition-all md:duration-300 md:hover:scale-105 md:hover:rounded-2xl md:hover:shadow-xl">
       {/* img */}
       <div>
         <img
-          className="w-full h-full rounded-s-lg | md:transition-all md:duration-300 md:hover:rounded-s-2xl"
+          className=" w-full h-full rounded-s-lg | md:transition-all md:duration-300  md:h-[20.5rem] md:w-[56rem] md:group-hover:rounded-s-2xl | lg:object-cover lg:object-left-top"
           src={img}
           alt={title}
         />
@@ -21,7 +21,9 @@ const ProjectCard = ({
 
       {/* text */}
       <div className="flex flex-col items-center gap-5 p-5 | md:items-start md:justify-between">
-        <h3 className="font-bold text-xl">{title}</h3>
+        <h3 className="font-bold text-xl text-center | md:text-left">
+          {title}
+        </h3>
 
         <p className="text-center text-slate-500 | md:text-left">{desc}</p>
 
@@ -45,7 +47,7 @@ const ProjectCard = ({
             <a
               href={previewLink}
               target="_blank"
-              className="text-sm underline | sm:text-md"
+              className="text-sm underline transition-colors duration-300 ease-in-out hover:text-accent | sm:text-md"
             >
               Live Preview
             </a>
@@ -55,7 +57,7 @@ const ProjectCard = ({
             <a
               href={codeLink}
               target="_blank"
-              className="text-sm underline | sm:text-md"
+              className="text-sm underline transition-colors duration-300 ease-in-out hover:text-accent | sm:text-md"
             >
               View Code
             </a>

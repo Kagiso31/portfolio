@@ -2,7 +2,7 @@ const Footer = () => {
   const date = new Date();
 
   return (
-    <footer className="py-10 px-5 bg-slate-900">
+    <footer className="py-10 px-5 bg-secondary">
       <div className="flex flex-col gap-4 justify-between items-center text-white container mx-auto | md:flex-row">
         <h2 className="font-bold text-xl">Kagiso.dev</h2>
 

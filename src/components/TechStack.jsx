@@ -2,7 +2,7 @@ import { techStack } from "../data";
 
 const TechStack = () => {
   return (
-    <section id="techstack" className="py-20 bg-white | md:py-28 ">
+    <section id="techstack" className="py-20 bg-neutral | md:py-28 ">
       <div className="flex flex-col gap-20 container mx-auto | lg:max-w-4xl">
         <h2 className="font-bold text-3xl text-center">Tech Stack</h2>
         <div>

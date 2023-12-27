@@ -6,23 +6,43 @@ const Navbar = () => {
 
   const hamburgerMenuLine = `h-1 w-8 rounded-full bg-slate-900 transition ease transform duration-300`;
   return (
-    <header className="fixed z-10 w-full p-5 bg-white shadow-md">
+    <header className="fixed z-10 w-full p-5 bg-neutral shadow-md">
       <div className="flex justify-between items-center container mx-auto">
         <h2 className="font-bold text-xl">Kagiso.dev</h2>
 
         <nav className="font-medium text-md hidden md:block">
           <ul role="list" className="flex items-center gap-8">
             <li>
-              <a href="#home">Home</a>
+              <a
+                href="#home"
+                className="font-medium transition-colors duration-300 ease-in-out hover:text-accent"
+              >
+                Home
+              </a>
             </li>
             <li>
-              <a href="#techstack">Tech Stack</a>
+              <a
+                href="#techstack"
+                className="font-medium transition-colors duration-300 ease-in-out hover:text-accent"
+              >
+                Tech Stack
+              </a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a
+                href="#projects"
+                className="font-medium transition-colors duration-300 ease-in-out hover:text-accent"
+              >
+                Projects
+              </a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a
+                href="#contact"
+                className="font-medium transition-colors duration-300 ease-in-out hover:text-accent"
+              >
+                Contact
+              </a>
             </li>
           </ul>
         </nav>
@@ -49,7 +69,7 @@ const Navbar = () => {
           <div
             className={`flex justify-center items-center h-screen w-full fixed top-0 ${
               isOpen ? "left-0" : "-left-full"
-            } bg-slate-50 transition-all ease duration-300`}
+            } bg-primary transition-all ease duration-300`}
           >
             <nav>
               <ul
@@ -57,17 +77,29 @@ const Navbar = () => {
                 className="flex flex-col items-center justify-center gap-10 font-medium text-xl"
               >
                 <li>
-                  <a onClick={toggleMenu} href="#home">
+                  <a
+                    onClick={toggleMenu}
+                    href="#home"
+                    className="font-medium transition-colors duration-300 ease-in-out hover:text-accent"
+                  >
                     Home
                   </a>
                 </li>
                 <li>
-                  <a onClick={toggleMenu} href="#techstack">
+                  <a
+                    onClick={toggleMenu}
+                    href="#techstack"
+                    className="font-medium transition-colors duration-300 ease-in-out hover:text-accent"
+                  >
                     Tech Stack
                   </a>
                 </li>
                 <li>
-                  <a onClick={toggleMenu} href="#projects">
+                  <a
+                    onClick={toggleMenu}
+                    href="#projects"
+                    className="font-medium transition-colors duration-300 ease-in-out hover:text-accent"
+                  >
                     Projects
                   </a>
                 </li>

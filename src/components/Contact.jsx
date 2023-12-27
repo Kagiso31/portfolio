@@ -2,7 +2,10 @@ import { contacts } from "../data";
 
 const Contact = () => {
   return (
-    <section id="contact" className=" py-20 px-2 bg-white | sm:px-4 | md:py-28">
+    <section
+      id="contact"
+      className=" py-20 px-2 bg-neutral | sm:px-4 | md:py-28"
+    >
       <div className="flex flex-col gap-20">
         <h2 className="font-bold text-3xl text-center">Contact</h2>
         <div className="flex flex-col items-center gap-8 w-full justify-between container mx-auto | md:flex-row md:gap-0 | lg:max-w-4xl">
@@ -15,7 +18,12 @@ const Contact = () => {
               <div>
                 <h3 className="font-bold text-xl">{contact.title}</h3>
                 {contact.link ? (
-                  <a href={contact.link}>{contact.username}</a>
+                  <a
+                    href={contact.link}
+                    className="font-medium transition-colors duration-300 ease-in-out hover:text-accent"
+                  >
+                    {contact.username}
+                  </a>
                 ) : (
                   <p className="font-medium">{contact.username}</p>
                 )}
