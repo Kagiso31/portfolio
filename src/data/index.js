@@ -9,12 +9,14 @@ import {
   reactjs,
   sass,
   tailwindcss,
+  ts,
   vite,
 } from "./assets";
 
 import spaceTourism from "../assets/space-tourism-2.png";
-import urlShorteningApi from "../assets/url-shortening-api-2.png";
+// import urlShorteningApi from "../assets/url-shortening-api-2.png";
 import roofixConstruction from "../assets/roofix-construction-2.png";
+import artex from "../assets/artex.png";
 
 // socials
 const socials = {
@@ -51,6 +53,10 @@ const tech = {
     title: "JavaScript",
     icon: js,
   },
+  ts: {
+    title: "TypeScript",
+    icon: ts,
+  },
   react: {
     title: "React",
     icon: reactjs,
@@ -78,8 +84,8 @@ export const techStack = [
   tech.html,
   tech.css,
   tech.js,
+  tech.ts,
   tech.react,
-  tech.bootstrap,
   tech.tailwindcss,
   tech.sass,
   tech.vite,
@@ -87,6 +93,14 @@ export const techStack = [
 
 // Projects section data
 export const projects = [
+  {
+    img: artex,
+    title: "Artex",
+    desc: "A one-stop solution for bespoke architectural and interior design services. Artex seamlessly connects clients with a network of skilled architects and designers to bring their visions to life.",
+    techStack: [tech.html, tech.ts, tech.sass, tech.react],
+    previewLink: "https://kagiso31.github.io/artex",
+    codeLink: "https://github.com/Kagiso31/artex",
+  },
   {
     img: roofixConstruction,
     title: "Roofix Construction",
@@ -103,14 +117,14 @@ export const projects = [
     previewLink: "https://kagiso31.github.io/space-tourism",
     codeLink: "https://github.com/Kagiso31/space-tourism",
   },
-  {
-    img: urlShorteningApi,
-    title: "URL shortening API",
-    desc: "A user-facing interface that condenses lengthy URLs into shorter, more manageable links, making sharing and tracking web addresses efficient and user-friendly.",
-    techStack: [tech.html, tech.css, tech.js, tech.react],
-    previewLink: "https://kagiso31.github.io/url-shortening-api",
-    codeLink: "https://github.com/Kagiso31/url-shortening-api",
-  },
+  // {
+  //   img: urlShorteningApi,
+  //   title: "URL shortening API",
+  //   desc: "A user-facing interface that condenses lengthy URLs into shorter, more manageable links, making sharing and tracking web addresses efficient and user-friendly.",
+  //   techStack: [tech.html, tech.css, tech.js, tech.react],
+  //   previewLink: "https://kagiso31.github.io/url-shortening-api",
+  //   codeLink: "https://github.com/Kagiso31/url-shortening-api",
+  // },
 ];
 
 // Contact section data

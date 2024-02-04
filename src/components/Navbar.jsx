@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <header className="fixed z-10 w-full p-5 bg-neutral shadow-md">
       <div className="flex justify-between items-center container mx-auto">
-        <h2 className="font-bold text-xl">Kagiso.dev</h2>
+        <h2 className="font-bold text-xl">Kagiso Mokou</h2>
 
         <nav className="font-medium text-md hidden md:block">
           <ul role="list" className="flex items-center gap-8">
